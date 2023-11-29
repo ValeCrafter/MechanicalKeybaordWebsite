@@ -9,7 +9,10 @@ module.exports = {
         accent: '#4A1C82',
         background: '#07030D',
         text: '#FFFFFF',
-      }
+      },
+      gridTemplateColumns: {
+        'main': '1fr minmax(900px, 10fr) 1fr',
+      },
     },
   },
   plugins: [],
