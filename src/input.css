@@ -7,9 +7,9 @@
 }
 
 .grid-main>*{
-    @apply grid grid-cols-[1fr_minmax(0,1000px)_1fr] w-full h-full gap-0
+    @apply flex w-full h-full gap-0 justify-center
 }
 
 .grid-main>*>*{
-    @apply col-start-2 gap-0
+    @apply max-w-[1000px] w-full 
 }

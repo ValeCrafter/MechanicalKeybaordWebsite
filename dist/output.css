@@ -607,14 +607,14 @@ video {
 }
 
 .grid-main>* {
-  display: grid;
+  display: flex;
   height: 100%;
   width: 100%;
-  grid-template-columns: 1fr minmax(0,1000px) 1fr;
+  justify-content: center;
   gap: 0px;
 }
 
 .grid-main>*>* {
-  grid-column-start: 2;
-  gap: 0px;
+  width: 100%;
+  max-width: 1000px;
 }
