@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    h1, h2, h3{
+        @apply text-primary
+    }
+}
+
+@layer utilities{
+}
+.grid-main{
+    @apply grid grid-rows-[minmax(50px,auto)_1fr_30px] h-full min-h-screen gap-0
+}
+
+.grid-main>*{
+    @apply flex w-full h-full gap-0 justify-center
+}
+
+.grid-main>*>*{
+    @apply max-w-[1000px] w-full 
+}
+
+.full-height{
+    height: 130px !important;
+}
