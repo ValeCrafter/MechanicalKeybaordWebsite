@@ -7,20 +7,42 @@
 </head>
 <body class="bg-background text-text grid-main">
   <header class="row-start-1 bg-secondary">
-    <div class="flex justify-between">
-      <div class="w-3 h-3 bg-green-400">
+    <div class="grid grid-cols-[1fr_auto_1fr] grid-rows-[minmax(50px,1fr)_minmax(0,auto)] h-full items-center py-3 px-5">
+      
+      <img src="media/LogoExportDark.svg" class="row-start-1 col-start-1 h-12"/>
 
-      </div>
-      <nav class=" flex flex-row max-md:flex-col gap-4">
-        <a href="#">Startseite</a>
+      <nav id="navigation" class=" 
+      flex flex-row row-start1 col-start2 
+      max-md:row-start-2 max-md:col-start-1 max-md:col-end-[none]
+      max-md:flex-col gap-8 max-md:gap-4 md:justify-end max-md:items-center
+      max-md:h-0 duration-300 ease-in-out overflow-hidden">
+        <a href="#" class="max-md:mt-4">Startseite</a>
         <a href="#">Keebs</a>
         <a href="#">Mein neues Projekt</a>
       </nav>
+      <button class="row-start-1 col-start-3 md:hidden justify-self-end p-2 align-middle w-min h-min" onclick="toggleHeight()">
+        <svg id="hb-menu-default" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+        <svg id="hb-menu-closed" class="menu-svg hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+      <script>
+        function toggleHeight() {
+          var nav = document.getElementById("navigation");
+          nav.classList.toggle("full-height");
+          var svg_def = document.getElementById("hb-menu-default");
+          svg_def.classList.toggle("hidden");
+          var svg_closed = document.getElementById("hb-menu-closed");
+          svg_closed.classList.toggle("hidden");
+        }
+      </script>
     </div>
   </header>
   <main class="row-start-2">
     <div class="">
-
+      asdf
     </div>
   </main>
   <footer class="row-start-3">
