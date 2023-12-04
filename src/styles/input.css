@@ -11,7 +11,7 @@
 @layer utilities{
 }
 .grid-main{
-    @apply grid grid-rows-[minmax(50px,auto)_1fr_30px] h-full min-h-screen gap-0
+    @apply grid grid-rows-[minmax(50px,auto)_1fr_50px] h-full min-h-screen gap-0
 }
 
 .grid-main>*{
@@ -23,5 +23,5 @@
 }
 
 .full-height{
-    height: 130px !important;
+    @apply max-md:!h-[130px]
 }
