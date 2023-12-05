@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.3.6 | MIT License | https://tailwindcss.com
+! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -121,10 +121,8 @@ strong {
 }
 
 /*
-1. Use the user's configured `mono` font-family by default.
-2. Use the user's configured `mono` font-feature-settings by default.
-3. Use the user's configured `mono` font-variation-settings by default.
-4. Correct the odd `em` font sizing in all browsers.
+1. Use the user's configured `mono` font family by default.
+2. Correct the odd `em` font sizing in all browsers.
 */
 
 code,
@@ -133,12 +131,8 @@ samp,
 pre {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   /* 1 */
-  font-feature-settings: normal;
-  /* 2 */
-  font-variation-settings: normal;
-  /* 3 */
   font-size: 1em;
-  /* 4 */
+  /* 2 */
 }
 
 /*
@@ -445,6 +439,12 @@ h1, h2, h3 {
   color: rgb(125 53 212 / var(--tw-text-opacity));
 }
 
+h1 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -552,6 +552,15 @@ h1, h2, h3 {
   text-underline-offset: 8px;
 }
 
+.line-marker {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  height: 0.25rem;
+  width: 16.666667%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(74 28 130 / var(--tw-bg-opacity));
+}
+
 .col-start-1 {
   grid-column-start: 1;
 }
@@ -570,6 +579,10 @@ h1, h2, h3 {
 
 .row-start-3 {
   grid-row-start: 3;
+}
+
+.box-border {
+  box-sizing: border-box;
 }
 
 .flex {
@@ -605,9 +618,25 @@ h1, h2, h3 {
   width: 1.5rem;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .w-min {
   width: -moz-min-content;
   width: min-content;
+}
+
+.flex-shrink {
+  flex-shrink: 1;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.basis-\[300px\] {
+  flex-basis: 300px;
 }
 
 .grid-cols-\[1fr_auto_1fr\] {
@@ -620,6 +649,10 @@ h1, h2, h3 {
 
 .flex-row {
   flex-direction: row;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .items-center {
@@ -648,6 +681,11 @@ h1, h2, h3 {
   background-color: rgb(29 11 50 / var(--tw-bg-opacity));
 }
 
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .p-2 {
   padding: 0.5rem;
 }
@@ -655,6 +693,11 @@ h1, h2, h3 {
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .py-3 {
@@ -680,20 +723,9 @@ h1, h2, h3 {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.underline {
-  text-decoration-line: underline;
-}
-
-.decoration-primary {
-  text-decoration-color: #7D35D4;
-}
-
-.decoration-4 {
-  text-decoration-thickness: 4px;
-}
-
-.underline-offset-8 {
-  text-underline-offset: 8px;
+.shadow-primary {
+  --tw-shadow-color: #7D35D4;
+  --tw-shadow: var(--tw-shadow-colored);
 }
 
 .duration-300 {
@@ -702,6 +734,10 @@ h1, h2, h3 {
 
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.shadow-box{
+  box-shadow: 23px 23px 0px -1px var(--tw-shadow-color)
 }
 
 .grid-main {
