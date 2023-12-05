@@ -6,14 +6,23 @@
     h1, h2, h3{
         @apply text-primary
     }
+    h1{
+        @apply text-3xl font-bold
+    }
 }
 @layer components{
     .selected {
         @apply underline-offset-8 decoration-primary decoration-4 underline 
     }
+    .line-marker{
+        @apply h-1 w-1/6 bg-accent mt-2 mb-4
+    }
 }
 
 @layer utilities{
+    .shadow-box{
+        box-shadow: 23px 23px 0px -1px var(--tw-shadow-color)
+    }
 }
 
 .grid-main{
