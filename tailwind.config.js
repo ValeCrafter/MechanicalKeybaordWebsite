@@ -10,6 +10,9 @@ module.exports = {
         background: '#07030D',
         text: '#FFFFFF',
       },
+      fontFamily:{
+        space_mono:["Space Mono"],
+      }, 
     },
   },
   plugins: [],

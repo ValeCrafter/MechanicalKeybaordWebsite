@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 /*
-! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com
+! tailwindcss v3.3.6 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -121,8 +123,10 @@ strong {
 }
 
 /*
-1. Use the user's configured `mono` font family by default.
-2. Correct the odd `em` font sizing in all browsers.
+1. Use the user's configured `mono` font-family by default.
+2. Use the user's configured `mono` font-feature-settings by default.
+3. Use the user's configured `mono` font-variation-settings by default.
+4. Correct the odd `em` font sizing in all browsers.
 */
 
 code,
@@ -131,8 +135,12 @@ samp,
 pre {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   /* 1 */
-  font-size: 1em;
+  font-feature-settings: normal;
   /* 2 */
+  font-variation-settings: normal;
+  /* 3 */
+  font-size: 1em;
+  /* 4 */
 }
 
 /*
@@ -434,18 +442,18 @@ video {
   display: none;
 }
 
-h1, h2, h3 {
+h1, h2, h3{
   --tw-text-opacity: 1;
   color: rgb(125 53 212 / var(--tw-text-opacity));
 }
 
-h1 {
+h1{
   font-size: 1.875rem;
   line-height: 2.25rem;
   font-weight: 700;
 }
 
-*, ::before, ::after {
+*, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -495,7 +503,7 @@ h1 {
   --tw-backdrop-sepia:  ;
 }
 
-::backdrop {
+::backdrop{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -545,14 +553,14 @@ h1 {
   --tw-backdrop-sepia:  ;
 }
 
-.selected {
+.selected{
   text-decoration-line: underline;
   text-decoration-color: #7D35D4;
   text-decoration-thickness: 4px;
   text-underline-offset: 8px;
 }
 
-.line-marker {
+.line-marker{
   margin-top: 0.5rem;
   margin-bottom: 1rem;
   height: 0.25rem;
@@ -561,7 +569,7 @@ h1 {
   background-color: rgb(74 28 130 / var(--tw-bg-opacity));
 }
 
-.picture-shadow {
+.picture-shadow{
   height: -moz-min-content;
   height: min-content;
   width: -moz-min-content;
@@ -573,176 +581,184 @@ h1 {
   box-shadow: 20px 20px 0px -1px var(--tw-shadow-color);
 }
 
-.col-start-1 {
+.col-start-1{
   grid-column-start: 1;
 }
 
-.col-start-3 {
+.col-start-3{
   grid-column-start: 3;
 }
 
-.row-start-1 {
+.row-start-1{
   grid-row-start: 1;
 }
 
-.row-start-2 {
+.row-start-2{
   grid-row-start: 2;
 }
 
-.row-start-3 {
+.row-start-3{
   grid-row-start: 3;
 }
 
-.box-border {
+.box-border{
   box-sizing: border-box;
 }
 
-.flex {
+.flex{
   display: flex;
 }
 
-.grid {
+.grid{
   display: grid;
 }
 
-.hidden {
+.hidden{
   display: none;
 }
 
-.h-12 {
+.h-12{
   height: 3rem;
 }
 
-.h-6 {
+.h-6{
   height: 1.5rem;
 }
 
-.h-full {
+.h-full{
   height: 100%;
 }
 
-.h-min {
+.h-min{
   height: -moz-min-content;
   height: min-content;
 }
 
-.w-6 {
+.w-6{
   width: 1.5rem;
 }
 
-.w-full {
+.w-full{
   width: 100%;
 }
 
-.w-min {
+.w-min{
   width: -moz-min-content;
   width: min-content;
 }
 
-.flex-shrink {
+.flex-shrink{
   flex-shrink: 1;
 }
 
-.flex-grow {
+.flex-grow{
   flex-grow: 1;
 }
 
-.basis-\[450px\] {
+.basis-\[450px\]{
   flex-basis: 450px;
 }
 
-.grid-cols-\[1fr_auto_1fr\] {
+.grid-cols-\[1fr_auto_1fr\]{
   grid-template-columns: 1fr auto 1fr;
 }
 
-.grid-rows-\[minmax\(50px\2c 1fr\)_minmax\(0\2c auto\)\] {
+.grid-rows-\[minmax\(50px\2c 1fr\)_minmax\(0\2c auto\)\]{
   grid-template-rows: minmax(50px,1fr) minmax(0,auto);
 }
 
-.flex-row {
+.flex-row{
   flex-direction: row;
 }
 
-.flex-wrap {
+.flex-wrap{
   flex-wrap: wrap;
 }
 
-.items-center {
+.items-center{
   align-items: center;
 }
 
-.gap-8 {
+.gap-8{
   gap: 2rem;
 }
 
-.justify-self-end {
+.justify-self-end{
   justify-self: end;
 }
 
-.overflow-hidden {
+.overflow-hidden{
   overflow: hidden;
 }
 
-.bg-background {
+.bg-background{
   --tw-bg-opacity: 1;
   background-color: rgb(7 3 13 / var(--tw-bg-opacity));
 }
 
-.bg-secondary {
+.bg-secondary{
   --tw-bg-opacity: 1;
   background-color: rgb(29 11 50 / var(--tw-bg-opacity));
 }
 
-.p-2 {
+.p-2{
   padding: 0.5rem;
 }
 
-.p-4 {
+.p-4{
   padding: 1rem;
 }
 
-.px-5 {
+.px-5{
   padding-left: 1.25rem;
   padding-right: 1.25rem;
 }
 
-.py-12 {
+.py-12{
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
-.py-3 {
+.py-3{
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
 
-.text-center {
+.text-center{
   text-align: center;
 }
 
-.align-middle {
+.align-middle{
   vertical-align: middle;
 }
 
-.text-primary {
+.font-space_mono{
+  font-family: Space Mono;
+}
+
+.font-bold{
+  font-weight: 700;
+}
+
+.text-primary{
   --tw-text-opacity: 1;
   color: rgb(125 53 212 / var(--tw-text-opacity));
 }
 
-.text-text {
+.text-text{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.duration-300 {
+.duration-300{
   transition-duration: 300ms;
 }
 
-.ease-in-out {
+.ease-in-out{
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.grid-main {
+.grid-main{
   display: grid;
   height: 100%;
   min-height: 100vh;
@@ -750,7 +766,7 @@ h1 {
   gap: 0px;
 }
 
-.grid-main>* {
+.grid-main>*{
   display: flex;
   height: 100%;
   width: 100%;
@@ -758,59 +774,59 @@ h1 {
   gap: 0px;
 }
 
-.grid-main>*>* {
+.grid-main>*>*{
   width: 100%;
   max-width: 1000px;
 }
 
-@media not all and (min-width: 768px) {
-  .full-height {
+@media not all and (min-width: 768px){
+  .full-height{
     height: 130px !important;
   }
 
-  .max-md\:col-start-1 {
+  .max-md\:col-start-1{
     grid-column-start: 1;
   }
 
-  .max-md\:col-end-\[none\] {
+  .max-md\:col-end-\[none\]{
     grid-column-end: none;
   }
 
-  .max-md\:row-start-2 {
+  .max-md\:row-start-2{
     grid-row-start: 2;
   }
 
-  .max-md\:mt-4 {
+  .max-md\:mt-4{
     margin-top: 1rem;
   }
 
-  .max-md\:h-0 {
+  .max-md\:h-0{
     height: 0px;
   }
 
-  .max-md\:flex-col {
+  .max-md\:flex-col{
     flex-direction: column;
   }
 
-  .max-md\:items-center {
+  .max-md\:items-center{
     align-items: center;
   }
 
-  .max-md\:gap-4 {
+  .max-md\:gap-4{
     gap: 1rem;
   }
 }
 
-@media (min-width: 768px) {
-  .md\:hidden {
+@media (min-width: 768px){
+  .md\:hidden{
     display: none;
   }
 
-  .md\:justify-end {
+  .md\:justify-end{
     justify-content: flex-end;
   }
 
-  .md\:py-2 {
+  .md\:py-2{
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
   }
