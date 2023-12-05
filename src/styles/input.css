@@ -17,11 +17,14 @@
     .line-marker{
         @apply h-1 w-1/6 bg-accent mt-2 mb-4
     }
+    .picture-shadow{
+        @apply shadow-box shadow-primary h-min w-min object-contain
+    }
 }
 
 @layer utilities{
     .shadow-box{
-        box-shadow: 23px 23px 0px -1px var(--tw-shadow-color)
+        box-shadow: 20px 20px 0px -1px var(--tw-shadow-color)
     }
 }
 
