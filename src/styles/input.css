@@ -7,9 +7,15 @@
         @apply text-primary
     }
 }
+@layer components{
+    .selected {
+        @apply underline-offset-8 decoration-primary decoration-4 underline 
+    }
+}
 
 @layer utilities{
 }
+
 .grid-main{
     @apply grid grid-rows-[minmax(50px,auto)_1fr_50px] h-full min-h-screen gap-0
 }
